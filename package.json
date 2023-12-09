@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_ENV=development node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "cross-env NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
@@ -20,6 +20,7 @@
     "react-dom": "latest"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "latest",
     "eslint-config-next": "latest"
   }
