@@ -4,10 +4,10 @@ import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import ShareIcon from "@mui/icons-material/Share";
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import Link from "next/link";
 
 const Contact = () => {
@@ -18,50 +18,46 @@ const Contact = () => {
       <div className={styles.contactDiv}>
         <div className={styles.contact}>
           <div className={styles.heading}> Phone </div>
-          <div className={styles.subHeading}> +971 506322498 </div>
+          <div className={styles.subHeading}> +92 3419203004</div>
           <div className={styles.icon}>
-            {" "}
-            <CallIcon sx={{ color: "#53c28b" }} />{" "}
+            <CallIcon sx={{ color: "#bbb" }} />
           </div>
         </div>
 
         <div className={styles.contact}>
           <div className={styles.heading}> Email </div>
-          <div className={styles.subHeading}> huhassan88@gmail.com </div>
+          <div className={styles.subHeading}> info@swifitesoft.com </div>
           <div className={styles.icon}>
-            {" "}
-            <EmailIcon sx={{ color: "#53c28b" }} />{" "}
+            <EmailIcon sx={{ color: "#bbb" }} />
           </div>
         </div>
 
         <div className={styles.contact}>
           <div className={styles.heading}> Address </div>
-          <div className={styles.subHeading}> Abu Dhabi, UAE </div>
+          <div className={styles.subHeading}> Kotha Topi Swabi </div>
           <div className={styles.icon}>
-            {" "}
-            <FmdGoodIcon sx={{ color: "#53c28b" }} />{" "}
+            <FmdGoodIcon sx={{ color: "#bbb" }} />
           </div>
         </div>
 
         <div className={styles.contact}>
           <div className={styles.heading}> Follow me </div>
           <div className={styles.socailLinks}>
-          <Link href="https://www.facebook.com/huhassan88/" target="_blank">
-          <FacebookIcon sx={{ color: "#fff "}} />
-        </Link>
-        <Link href="https://www.instagram.com/imhaseebulhasan/" target="_blank">
-          <InstagramIcon sx={{ color: "#fff "}} />
-        </Link>
-        <Link href="https://www.linkedin.com/in/haseeb-ul-hasan-203259164/" target="_blank">
-          <LinkedInIcon sx={{ color: "#fff "}} />
-        </Link>
-        <Link href="https://github.com/HaseebUlHasan" target="_blank">
-          <GitHubIcon sx={{ color: "#fff "}} />
-        </Link>
+            <Link href="" target="_blank">
+              <FacebookIcon sx={{ color: "#fff " }} />
+            </Link>
+            <Link href="" target="_blank">
+              <InstagramIcon sx={{ color: "#fff " }} />
+            </Link>
+            <Link href="" target="_blank">
+              <LinkedInIcon sx={{ color: "#fff " }} />
+            </Link>
+            <Link href="" target="_blank">
+              <GitHubIcon sx={{ color: "#fff " }} />
+            </Link>
           </div>
           <div className={styles.icon}>
-            {" "}
-            <ShareIcon sx={{ color: "#53c28b" }} />{" "}
+            <ShareIcon sx={{ color: "#bbb" }} />
           </div>
         </div>
       </div>

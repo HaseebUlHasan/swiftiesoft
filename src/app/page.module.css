@@ -5,18 +5,17 @@
   padding: 60px;
   width: 100%;
 }
-
-.personalInfo {
+.main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
-  width: 50%;
+  gap: 36px;
 }
 
 .title {
-  font-size: 48px;
-  background: linear-gradient(to bottom, #194c33, #bbb);
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #bbb, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -24,34 +23,20 @@
 .desc {
   font-size: 16px;
   font-weight: 400;
+  width: 80%;
 }
-
-.downloadBtn {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.download {
-  text-decoration: none;
-  cursor: pointer;
-  padding: 10px;
-  border: 1px solid #53c28b;
-  border-radius: 5px;
-  width: max-content;
-  color: #53c28b;
-}
-.image {
+.imageCont {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 650px;
+  height: 420px;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 64px;
   animation: move 3s infinite ease alternate;
 }
 
 @keyframes move {
   from {
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   to {
     transform: translateY(0px) scale(1.03);
@@ -65,10 +50,12 @@
     gap: 48px;
     padding: 60px 0px;
   }
-  .image {
-    width: 250px;
-    height: 250px;
+
+  .imageCont {
+    width: 100%;
+    height: 350px;
   }
+
   .downloadBtn {
     flex-direction: column;
     gap: 16px;

@@ -1,12 +1,7 @@
 "use client";
+import Image from "next/image";
 import styles from "./navbar.module.css";
-import {
-  Navbar,
-  Container,
-  Nav,
-  NavDropdown,
-  Offcanvas,
-} from "react-bootstrap";
+import { Navbar, Container, Nav, Offcanvas } from "react-bootstrap";
 
 const AppBar = () => {
   return (
@@ -14,9 +9,12 @@ const AppBar = () => {
       <Navbar expand="sm" className="w-100">
         <Container>
           <Navbar.Brand className={styles.name} href="/">
-            Haseeb Ul Hasan
+            SWIFTIESOFT
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="offcanvasNavbar-expand-sm" className={styles.toggle}/>
+          <Navbar.Toggle
+            aria-controls="offcanvasNavbar-expand-sm"
+            className={styles.toggle}
+          />
           <Navbar.Offcanvas
             id="offcanvasNavbar-expand-sm"
             aria-labelledby="offcanvasNavbarLabel-expand-sm"
@@ -26,20 +24,17 @@ const AppBar = () => {
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <div className={styles.links}>
+                  <Nav.Link href="/" className={styles.link}>
+                    Home
+                  </Nav.Link>
                   <Nav.Link href="/about" className={styles.link}>
                     About
                   </Nav.Link>
-                  <Nav.Link href="/education" className={styles.link}>
-                    Education
+                  <Nav.Link href="/service" className={styles.link}>
+                    Services
                   </Nav.Link>
-                  <Nav.Link href="/skills" className={styles.link}>
-                    Skills
-                  </Nav.Link>
-                  <Nav.Link href="/experience" className={styles.link}>
-                    Experience
-                  </Nav.Link>
-                  <Nav.Link href="/project" className={styles.link}>
-                    Projects
+                  <Nav.Link href="/team" className={styles.link}>
+                    Teams
                   </Nav.Link>
                   <Nav.Link href="/contact" className={styles.link}>
                     Contact
